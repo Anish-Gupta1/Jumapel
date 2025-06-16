@@ -11,9 +11,9 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  images: {
-    domains: ['api.storyapis.com'],
-  },
+  // images: {
+  //   unoptimized: true,
+  // },
   transpilePackages:[
     '@tomo-inc/tomo-evm-kit',
     '@tomo-wallet/uikit-lite',

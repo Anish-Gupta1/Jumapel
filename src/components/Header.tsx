@@ -3,6 +3,7 @@
 import { ConnectButton } from "@tomo-inc/tomo-evm-kit";
 import Image from "next/image";
 import Link from "next/link";
+import logo from "../images/logo.jpg";
 
 function Header() {
   return (
@@ -18,7 +19,7 @@ function Header() {
             <Image 
               width={56}
               height={56}
-              src="/logo.jpg"
+              src={logo}
               alt="Jumapel Logo"
               className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/95 
                        object-cover ring-2 ring-white/20 

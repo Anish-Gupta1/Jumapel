@@ -3,6 +3,11 @@ import { ConnectButton } from "@tomo-inc/tomo-evm-kit";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 import Image from "next/image";
+import storyLogo from "../images/storylogo.png";
+import nft1 from "../images/nft1.png";
+import nft2 from "../images/nft2.png";
+import nft3 from "../images/nft3.png";
+import logo from "../images/logo.jpg";
 
 export default function Home() {
   const router = useRouter();
@@ -57,7 +62,7 @@ export default function Home() {
             </div>
             {/* Story Protocol Marquee Box in Hero Left */}
             <div className="w-full max-w-md bg-black rounded-2xl px-6 py-4 flex items-center overflow-hidden relative mt-10">
-              <Image src="/story%20logo.png" width={56} height={56} alt="Story Protocol Logo" className="w-10 h-10 mr-4 rounded-lg object-contain bg-white p-1" />
+              <Image src={storyLogo} width={56} height={56} alt="Story Protocol Logo" className="w-10 h-10 mr-4 rounded-lg object-contain bg-white p-1" />
               <div className="relative w-full overflow-hidden">
                 <div className="animate-marquee whitespace-nowrap text-white text-lg font-semibold tracking-wide">
                   Built on Story Protocol &nbsp;•&nbsp; Built on Story Protocol &nbsp;•&nbsp; Built on Story Protocol &nbsp;•&nbsp; Built on Story Protocol
@@ -67,10 +72,10 @@ export default function Home() {
           </div>
 
           <div className="flex-1 grid grid-cols-2 grid-rows-2 gap-4 bg-[#28282b] p-10 animate-slideImages rounded-l-3xl relative overflow-hidden">
-            <Image src="/nft1.png" alt="NFT 1" width={500} height={500} className="rounded-xl object-cover w-full h-full aspect-square shadow-md animate-float" style={{animationDelay: '0s'}} />
-            <Image src="/nft2.png" alt="NFT 2" width={500} height={500} className="rounded-xl object-cover w-full h-full aspect-square shadow-md animate-float" style={{animationDelay: '0.5s'}} />
-            <Image src="/nft3.png" alt="NFT 3" width={500} height={500} className="rounded-xl object-cover w-full h-full aspect-square shadow-md animate-float" style={{animationDelay: '1s'}} />
-            <Image src="/nft1.png" alt="NFT 1 repeat" width={500} height={500} className="rounded-xl object-cover w-full h-full aspect-square shadow-md animate-float" style={{animationDelay: '1.5s'}} />
+            <Image src={nft1} alt="NFT 1" width={500} height={500} className="rounded-xl object-cover w-full h-full aspect-square shadow-md animate-float" style={{animationDelay: '0s'}} />
+            <Image src={nft2} alt="NFT 2" width={500} height={500} className="rounded-xl object-cover w-full h-full aspect-square shadow-md animate-float" style={{animationDelay: '0.5s'}} />
+            <Image src={nft3} alt="NFT 3" width={500} height={500} className="rounded-xl object-cover w-full h-full aspect-square shadow-md animate-float" style={{animationDelay: '1s'}} />
+            <Image src={nft1} alt="NFT 1 repeat" width={500} height={500} className="rounded-xl object-cover w-full h-full aspect-square shadow-md animate-float" style={{animationDelay: '1.5s'}} />
           </div>
         </section>
       </main>
@@ -97,7 +102,7 @@ export default function Home() {
       </section>
       <footer className="w-full bg-[#232323] py-6 flex justify-center items-center mt-0">
         <Image
-          src="/logo.jpg"
+          src={logo}
           alt="Jumapel Logo"
           width={56}
           height={56}
