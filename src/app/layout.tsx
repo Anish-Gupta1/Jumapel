@@ -3,6 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Web3Providers from "../provider/Web3Provider";
 import Header from "../components/Header";
+import { Analytics } from '@vercel/analytics/next';
+
 
 
 const geistSans = Geist({
@@ -33,6 +35,7 @@ export default function RootLayout({
         <Web3Providers>
           <Header />
           {children}
+          <Analytics />
         </Web3Providers>
       </body>
     </html>
